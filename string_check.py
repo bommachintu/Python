@@ -1,32 +1,6 @@
-st = "Qa1"
-for i in range(len(st)):
-    if(st[i].isalnum()):
-        print("True")
-        break;
-    elif(i==len(st)-1):
-        print("False")
-for i in range(len(st)):
-    if(st[i].isalpha()):
-        print("True")
-        break;
-    elif(i==len(st)-1):
-        print("False")
-for i in range(len(st)):
-    if(st[i].isdigit()):
-        print("True")
-        break;
-    elif(i==len(st)-1):
-        print("False")
-for i in range(len(st)):
-    if((st[i].islower())):
-        print("True")
-        break;
-    elif(i==len(st)-1):
-        print("False")
-for i in range(len(st)):
-    if((st[i].isupper())):
-        print("True")
-        break;
-    elif(i==len(st)-1):
-        print("False")
-        
+S = raw_input()
+print any([char.isalnum() for char in S])
+print any([char.isalpha() for char in S])
+print any([char.isdigit() for char in S])
+print any([char.islower() for char in S])
+print any([char.isupper() for char in S])
